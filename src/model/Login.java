@@ -6,6 +6,7 @@ public class Login {
     private String senha;
     private DoisFatores chaveConfirmacao;
     private Token token;
+    private Smartphone smartphone;
 
     public String getUsuario() {
         return usuario;
@@ -37,6 +38,14 @@ public class Login {
 
     public void setToken(Token token) {
         this.token = token;
+    }
+
+    public Smartphone getSmartphone() {
+        return smartphone;
+    }
+
+    public void setSmartphone(Smartphone smartphone) {
+        this.smartphone = smartphone;
     }
 
     @Override

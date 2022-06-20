@@ -1,11 +1,18 @@
 package controller;
 
-public class LoginDoisFatores {
+public class LoginBoogle {
 
     public void fazerLogin(String usuario, String senha) {
         System.out.println("Login: " + usuario);
         System.out.println("Senha: " + senha);
-        System.out.println("A chave de autenticação foi enviada.");
+    }
+
+    public void smartphone(boolean phone) {
+        if(phone) {
+            System.out.println("A chave de autenticação foi enviada via SMS.");
+        } else {
+            System.out.println("A chave de autenticação foi enviada por email.");
+        }
     }
 
     public void confirmaSegundaEtapa(int chaveConfirmacao) {
